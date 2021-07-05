@@ -141,13 +141,12 @@ export default {
 
   created () {
     if (this.configuration[this.typeListing].composeede !== undefined) {
-      this.nomficheliee = this.configuration[this.typeListing].composeede // ex : this.nomficheliee = this.configuration.EA.composeede
+      this.nomficheliee = this.configuration[this.typeListing].composeede
       console.log('fiche liée : ' + this.nomficheliee)
-      this.db = new Database(this.nomficheliee) // ex : new Database(this.configuration.EA.composeede) <=> new Database(ficheus)
-      this.chargerListe(this.nomficheliee) // Servira à voir les US liées liées à l'EA courante
+      this.db = new Database(this.nomficheliee)
+      this.chargerListe(this.nomficheliee)
     }
-
-    this.db = new Database(this.configuration[this.typeListing].nomBD) // Equivalent à par ex: this.db = new Database(ficheus)
+    this.db = new Database(this.configuration[this.typeListing].nomBD)
     this.indexCourant = this.configuration[this.typeListing].index
     this.labelIndexConfig = this.configuration[this.typeListing].incrementSecondaire
     this.incrementBasiqueCourant = this.configuration[this.typeListing].incrementBasique
@@ -171,14 +170,10 @@ export default {
 
     peuplerEntetesColonnes () {
       var prefUtilisateurs = JSON.parse(localStorage.getItem('PREF_UTIL_' + this.typeListing))
-
-      // transformation du format de la config en format "headers"
       this.headers = this.exclureTitresCheckbox.map((element) => {
         return { text: element.label, value: element.champ }
       })
-
       this.headers.push({ text: 'Actions', value: 'actions', sortable: false })
-
       if (!prefUtilisateurs) {
         this.headersSelected = this.headers
       } else {

@@ -18,10 +18,6 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-
         <themenuitems :config="configuration" v-if="(configuration!==null) && (!this.$route.meta.ecranConnecte)"/>
       </v-app-bar>
       <v-navigation-drawer
@@ -53,6 +49,7 @@
                 <v-toolbar-title>E-Commerce</v-toolbar-title>
           </div>
 
+<!--
           <v-chip
           class="ma-2"
           :color="connected ? 'green' : 'red'"
@@ -68,7 +65,9 @@
           <v-btn @click="logout" color="green" >
            Déconnexion
          </v-btn>
+-->
 
+<!--
           <router-link style="text-decoration: none; color: inherit;" to="/">
           <v-list-item>
             <v-list-item-icon>
@@ -77,13 +76,24 @@
             <v-list-item-title>Accueil</v-list-item-title>
           </v-list-item>
           </router-link>
+-->
 
+<!--
             <router-link style="text-decoration: none; color: inherit;" to="/ClientAccueil">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-account</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Espace Client</v-list-item-title>
+            </v-list-item>
+            </router-link>
+-->
+            <router-link style="text-decoration: none; color: inherit;" to="/">
+            <v-list-item>
+              <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Accueil</v-list-item-title>
             </v-list-item>
             </router-link>
 

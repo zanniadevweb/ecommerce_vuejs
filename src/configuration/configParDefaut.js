@@ -9,11 +9,11 @@ const CONFIGINIT = {
     nom: 'Boissons',
     tableActif: true,
     champs: [
-      { increment: 'numero_boisson', label: 'N° Boisson', champ: 'numero_boisson', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
+      { increment: 'numero_Boissons', label: 'N° Boisson', champ: 'numero_article', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
       { label: 'Nom Produit', champ: 'nom_produit', type: 'text', largeur: 12, typeinput: 'text', champActif: true },
-      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand'], itemspossibles: ['Italien', 'Français', 'Allemand'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Café', 'Thé', 'Chocolat'], itemspossibles: ['Café', 'Aucune', 'Construction', 'Destruction', 'Occupation', 'Indeterminé'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], itemspossibles: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
+      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand', 'Américain', 'Brésilien', 'Anglais', 'Indien'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Café', 'Thé', 'Chocolat', 'Soda', 'Eau gazeuse'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true },
       { label: 'Description', champ: 'description', type: 'text', largeur: 12, typeinput: 'text', champActif: true }
     ]
   },
@@ -27,11 +27,11 @@ const CONFIGINIT = {
     nom: 'Fruitslegumes',
     tableActif: true,
     champs: [
-      { increment: 'numero_fruitoulegume', label: 'N° Fruit ou Légume', champ: 'numero_fruitoulegume', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
+      { increment: 'numero_Fruitslegumes', label: 'N° Fruit ou Légume', champ: 'numero_article', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
       { label: 'Nom Produit', champ: 'nom_produit', type: 'text', largeur: 12, typeinput: 'text', champActif: true },
-      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand'], itemspossibles: ['Italien', 'Français', 'Allemand'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Café', 'Thé', 'Chocolat'], itemspossibles: ['Café', 'Aucune', 'Construction', 'Destruction', 'Occupation', 'Indeterminé'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], itemspossibles: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
+      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand', 'Américain'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Tomate', 'Carotte', 'Fraise', 'Courgette'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true },
       { label: 'Description', champ: 'description', type: 'text', largeur: 12, typeinput: 'text', champActif: true }
     ]
   },
@@ -45,11 +45,11 @@ const CONFIGINIT = {
     nom: 'Boulangerie',
     tableActif: true,
     champs: [
-      { increment: 'numero_boulangerie', label: 'N° Boulangerie', champ: 'numero_boulangerie', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
+      { increment: 'numero_Boulangerie', label: 'N° Boulangerie', champ: 'numero_article', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
       { label: 'Nom Produit', champ: 'nom_produit', type: 'text', largeur: 12, typeinput: 'text', champActif: true },
-      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand'], itemspossibles: ['Italien', 'Français', 'Allemand'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Café', 'Thé', 'Chocolat'], itemspossibles: ['Café', 'Aucune', 'Construction', 'Destruction', 'Occupation', 'Indeterminé'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], itemspossibles: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
+      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Baguette', 'Pain aux céréales', 'Chocolatine'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true },
       { label: 'Description', champ: 'description', type: 'text', largeur: 12, typeinput: 'text', champActif: true }
     ]
   },
@@ -63,11 +63,11 @@ const CONFIGINIT = {
     nom: 'Fromagerie',
     tableActif: true,
     champs: [
-      { increment: 'numero_fromagerie', label: 'N° Fromagerie', champ: 'numero_fromagerie', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
+      { increment: 'numero_Fromagerie', label: 'N° Fromagerie', champ: 'numero_article', type: 'number', largeur: 6, typeinput: 'number', champActif: true },
       { label: 'Nom Produit', champ: 'nom_produit', type: 'text', largeur: 12, typeinput: 'text', champActif: true },
-      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français', 'Allemand'], itemspossibles: ['Italien', 'Français', 'Allemand'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Café', 'Thé', 'Chocolat'], itemspossibles: ['Café', 'Aucune', 'Construction', 'Destruction', 'Occupation', 'Indeterminé'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
-      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], itemspossibles: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true }, // SELECT
+      { label: 'Origine', champ: 'tag_origine', type: 'text', items: ['Italien', 'Français'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Type Produit', champ: 'tag_typeproduit', type: 'text', items: ['Cheddar', 'Bleu', 'Yaourt'], largeur: 12, typeinput: 'select', champActif: true },
+      { label: 'Devise', champ: 'devise', type: 'text', items: ['$', '€'], largeur: 12, typeinput: 'select', champActif: true },
       { label: 'Description', champ: 'description', type: 'text', largeur: 12, typeinput: 'text', champActif: true }
     ]
   }

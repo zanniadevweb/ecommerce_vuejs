@@ -8,6 +8,7 @@ import '@mdi/font/css/materialdesignicons.css'
 
 Vue.config.productionTip = false
 
+/*
 router.beforeEach((to, from, next) => {
   if (!store.state.pending) {
     if (to.meta.ecranConnecte) {
@@ -41,6 +42,7 @@ router.beforeEach((to, from, next) => {
     })
   }
 })
+*/
 
 new Vue({
   router,
